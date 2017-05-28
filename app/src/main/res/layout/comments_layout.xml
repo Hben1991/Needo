@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/userNameCommentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="user name" />
+
+    <TextView
+        android:id="@+id/commentContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:text="comment" />
+
+    <View style="@style/Divider"/>
+
+
+
+</LinearLayout>

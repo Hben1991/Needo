@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1082073084178",
+    "firebase_url": "https://needo-a0ff2.firebaseio.com",
+    "project_id": "needo-a0ff2",
+    "storage_bucket": "needo-a0ff2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082073084178:android:56cfa6815c149012",
+        "android_client_info": {
+          "package_name": "com.hben.needo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082073084178-38aqr11m5jeu51gq1nldd8svi4pjii52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hben.needo",
+            "certificate_hash": "58B433BF508EEC6702810329DAB2B8E3C738F68F"
+          }
+        },
+        {
+          "client_id": "1082073084178-db6t8song9dftknufv2ad421b905paoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuuTzV0PIK_ziv0r7lctuazu3cTKEsJwI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082073084178-db6t8song9dftknufv2ad421b905paoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

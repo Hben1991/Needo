@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Needo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="title_activity_full_post">FullPostActivity</string>
+    <string name="open_card_animation">OpenCardAnimation</string>
+    <string name="open_card_FAB_animation">OpenCardFabAnimation</string>
+    <string name="open_card_title_animation">OpenCardTitleAnimation</string>
+    <string name="open_card_content_animation">OpenCardContentAnimation</string>
+    <string name="comments">Comments</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="complete">Complete</string>
+    <string name="error">Error</string>
+    <string name="submit">Submit</string>
+    <string name="empty_post_error">You can\'t submit an empty post</string>
+    <string name="done">Done</string>
+    <string name="enter_your_content_here">Enter your content</string>
+    <string name="title">Enter your title</string>
+    <string name="send">send</string>
+</resources>

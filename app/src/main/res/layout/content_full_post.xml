@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardViewBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hben.needo.FullPostActivity"
+    tools:showIn="@layout/activity_full_post">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="12dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/post_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/full_post_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textSize="20sp"
+                     />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_cardView"
+            android:transitionName="@string/open_card_animation"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/commentsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/comments"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/commentsTextView"
+                    >
+
+                    <EditText
+                        android:id="@+id/messageEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"/>
+
+
+                    <com.dd.CircularProgressButton
+                        android:id="@+id/submitButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_gravity="bottom"
+                        app:cpb_cornerRadius="20dp"
+                        android:enabled="false"
+                        app:cpb_selectorIdle="@drawable/button_idle_state_selector"
+                        app:cpb_textComplete="@string/complete"
+                        app:cpb_textError="@string/error"
+                        app:cpb_textIdle="@string/send" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/commentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/commentsTextView"
+                    tools:listitem="@layout/comments_layout">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

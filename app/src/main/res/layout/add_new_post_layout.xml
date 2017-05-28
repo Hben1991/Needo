@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addNewPostLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardViewBackground"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/addNewTitle_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+
+            <EditText
+                android:id="@+id/inputTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:gravity="top|center"
+                android:hint="@string/title"
+                android:inputType="textAutoCorrect"
+                android:textAlignment="center" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/addNewContent_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/inputContentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@android:color/transparent"
+                android:gravity="top|center"
+                android:hint="@string/enter_your_content_here"
+                android:inputType="textMultiLine"
+                android:textAlignment="textStart"
+                android:padding="5dp"
+
+                tools:ignore="RtlCompat" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/submitButton"
+        android:layout_width="270dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:paddingEnd="45dp"
+        android:paddingStart="45dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cpb_cornerRadius="48dp"
+        app:cpb_selectorIdle="@drawable/button_idle_state_selector"
+        app:cpb_textComplete="@string/complete"
+        app:cpb_textError="@string/empty_post_error"
+        app:cpb_textIdle="@string/submit" />
+
+
+</LinearLayout>
